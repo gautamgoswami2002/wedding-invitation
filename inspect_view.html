@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html { scroll-behavior: auto !important; }
+  </style>
+</head>
+<body class="luxury-invitation-page">
+  <div id="content"></div>
+  <script>
+    fetch('/')
+      .then(r => r.text())
+      .then(html => {
+        // Parse the body content
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const main = doc.getElementById('invitation-main');
+        document.body.appendChild(main);
+        
+        // Remove envelope
+        const env = document.getElementById('envelope-overlay');
+        if (env) env.remove();
+
+        // Get section to scroll to from URL query param: ?scroll=section-message
+        const urlParams = new URLSearchParams(window.location.search);
+        const targetId = urlParams.get('scroll');
+        if (targetId) {
+          const target = document.getElementById(targetId);
+          if (target) {
+            target.scrollIntoView({ behavior: 'instant' });
+          }
+        }
+      });
+  </script>
+</body>
+</html>

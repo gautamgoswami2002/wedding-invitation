@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="envelope-locked">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Kevin and Blessy — Wedding Invitation</title>
+  
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+  </script>
+  
+  <meta name="description" content="Wedding celebration of Kevin and Blessy. Join us on our special day on January 16th, 2027 at Infant Jesus Church, Hansol, Ahmedabad.">
+  <meta property="og:title" content="Kevin and Blessy — Wedding Invitation">
+  <meta property="og:description" content="We invite you to celebrate our wedding day on January 16th, 2027 at Infant Jesus Church, Hansol, Ahmedabad, Gujarat.">
+  <meta property="og:image" content="assets/WhatsApp Image 2026-11-18 at 11.24.31 PM.jpeg">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/wax_seal.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Google Fonts Preconnect & Fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Ovo&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="luxury-invitation-page envelope-locked">
+
+  <!-- Main Responsive Invitation Container -->
+  <main class="invitation-main" id="invitation-main">
+
+      <!-- ENVELOPE OPENING OVERLAY -->
+      <section class="envelope-overlay" id="envelope-overlay" aria-label="Wedding Envelope">
+        <div class="envelope-wrapper">
+          <!-- 4 Envelope Flaps -->
+          <div class="flap flap-top" id="flap-top">
+            <img src="assets/polygon_top.png" alt="Top flap" class="flap-img" draggable="false">
+          </div>
+          <div class="flap flap-bottom" id="flap-bottom">
+            <img src="assets/polygon_bottom.png" alt="Bottom flap" class="flap-img" draggable="false">
+          </div>
+          <div class="flap flap-left" id="flap-left">
+            <img src="assets/polygon_left.png" alt="Left flap" class="flap-img" draggable="false">
+          </div>
+          <div class="flap flap-right" id="flap-right">
+            <img src="assets/polygon_right.png" alt="Right flap" class="flap-img" draggable="false">
+          </div>
+
+          <!-- Wax Seal Center Button -->
+          <div class="wax-seal-wrapper popup-enter" id="wax-seal-btn" role="button" tabindex="0" aria-label="Open wedding invitation">
+            <div class="wax-seal-glow"></div>
+            <img src="assets/wax_seal.png" alt="Wax Seal Monogram" class="wax-seal-img" draggable="false">
+            <div class="wax-seal-ripple"></div>
+            <div class="open-instruction">
+              <span class="open-text">Click to open</span>
+              <span class="open-subtext">Tap the wax seal</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PETALS CANVAS FOR ROMANTIC DRIFTING EFFECT -->
+      <canvas id="petals-canvas" class="petals-canvas" aria-hidden="true"></canvas>
+
+      <!-- SCROLLABLE INVITATION CONTENT -->
+      <article class="invitation-content" id="invitation-content">
+
+        <!-- SECTION 1: HERO / BACKGROUND VIDEO -->
+        <section class="section section-hero" id="section-hero">
+          <div class="hero-container">
+            <div class="hero-fountain-card">
+              <div class="video-container">
+                <video id="bgVideo" class="hero-video" autoplay muted loop playsinline preload="auto">
+                  <source src="assets/fountain_bg.mp4" type="video/mp4">
+                  <source src="https://assets.webgencyinvitations.com/IMG_6230%20(1)%20(1).mp4" type="video/mp4">
+                </video>
+                <div class="hero-vignette"></div>
+              </div>
+
+              <div class="hero-content">
+                <p class="hero-subtitle">Wedding Day</p>
+                <p class="hero-date">16.01.27</p>
+
+                <div class="hero-names-wrap">
+                  <h1 class="hero-title">
+                    <span class="name-part name-groom">Kevin</span>
+                    <span class="name-amp">&amp;</span>
+                    <span class="name-part name-bride">Blessy</span>
+                  </h1>
+                </div>
+
+                <div class="hero-scroll-cue">
+                  <span class="scroll-arrow">↓</span>
+                  <span class="scroll-label">Scroll to Explore</span>
+                </div>
+              </div>
+
+              <!-- Bottom Peonies & Ruby Roses Arrangement (7 overlapping botanical blooms) -->
+              <div class="hero-floral-cluster" aria-hidden="true">
+                <img src="assets/ruby8.png" class="fl-piece fl-left-1" alt="" draggable="false">
+                <img src="assets/ruby6.png" class="fl-piece fl-left-2" alt="" draggable="false">
+                <img src="assets/ruby7.png" class="fl-piece fl-center-bud" alt="" draggable="false">
+                <img src="assets/ruby4.png" class="fl-piece fl-center-left" alt="" draggable="false">
+                <img src="assets/ruby_rose_cluster.png" class="fl-piece fl-white-rose" alt="" draggable="false">
+                <img src="assets/ruby2.png" class="fl-piece fl-center-right" alt="" draggable="false">
+                <img src="assets/ruby1.png" class="fl-piece fl-right-giant" alt="" draggable="false">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 2: DEAR FRIENDS AND FAMILY -->
+        <section class="section section-burgundy section-message" id="section-message">
+          <div class="message-inner text-center">
+            <h2 class="script-title title-light">Dear Friends and Family,</h2>
+            <div class="message-body-wrap">
+              <p class="message-body">
+                As we get ready to say “I do,” we feel grateful for the wonderful people in our lives.
+              </p>
+              <p class="message-body">
+                Your support means the world to us, and we would be honored to have you with us as we begin our life together.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 3: COUNTDOWN TIMER -->
+        <section class="section section-cream section-countdown" id="section-countdown">
+          <!-- Top Deckled Edge (Burgundy teeth hanging into cream) -->
+          <div class="countdown-torn-top" aria-hidden="true">
+            <img src="assets/torn_edge.svg" alt="" class="torn-svg-img" draggable="false">
+          </div>
+
+          <div class="section-inner text-center">
+            <h2 class="script-title title-burgundy">The Celebration Begins In</h2>
+            <div class="countdown-grid" id="countdownContainer">
+              <div class="countdown-item">
+                <span class="countdown-num" id="days">00</span>
+                <span class="countdown-lbl">Days</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-item">
+                <span class="countdown-num" id="hours">00</span>
+                <span class="countdown-lbl">Hours</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-item">
+                <span class="countdown-num" id="minutes">00</span>
+                <span class="countdown-lbl">Minutes</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-item">
+                <span class="countdown-num" id="seconds">00</span>
+                <span class="countdown-lbl">Seconds</span>
+              </div>
+            </div>
+            <p class="countdown-note">Saturday, January 16, 2027 • Ahmedabad, Gujarat</p>
+          </div>
+
+          <!-- Bottom Deckled Edge (Burgundy teeth pointing up into cream) -->
+          <div class="countdown-torn-bottom" aria-hidden="true">
+            <img src="assets/torn_edge.svg" alt="" class="torn-svg-img rotate-180" draggable="false">
+          </div>
+        </section>
+
+        <!-- SECTION 4: SCHEDULE OF EVENTS -->
+        <section class="section section-burgundy section-schedule" id="section-schedule">
+          <div class="section-inner">
+            <h2 class="script-title title-light text-center">Schedule of Events</h2>
+
+            <div class="timeline-container" id="timelineContainer">
+              <div class="timeline-spine"></div>
+
+              <!-- Event 1 -->
+              <div class="timeline-row" data-timeline-idx="0">
+                <div class="timeline-time">16:00</div>
+                <div class="timeline-node">
+                  <span class="diamond-dot"></span>
+                </div>
+                <div class="timeline-desc">
+                  <h3 class="event-title">Guest Welcome</h3>
+                  <p class="event-subtitle">Infant Jesus Church, Hansol</p>
+                </div>
+              </div>
+
+              <!-- Event 2 -->
+              <div class="timeline-row" data-timeline-idx="1">
+                <div class="timeline-time">17:00</div>
+                <div class="timeline-node">
+                  <span class="diamond-dot"></span>
+                </div>
+                <div class="timeline-desc">
+                  <h3 class="event-title">Wedding Solemnisation</h3>
+                  <p class="event-subtitle">Infant Jesus Church, Hansol</p>
+                </div>
+              </div>
+
+              <!-- Event 3 -->
+              <div class="timeline-row" data-timeline-idx="2">
+                <div class="timeline-time">19:00</div>
+                <div class="timeline-node">
+                  <span class="diamond-dot"></span>
+                </div>
+                <div class="timeline-desc">
+                  <h3 class="event-title">Wedding Reception</h3>
+                  <p class="event-subtitle">Avsar Party Plot, Hansol</p>
+                </div>
+              </div>
+
+              <!-- Event 4 -->
+              <div class="timeline-row" data-timeline-idx="3">
+                <div class="timeline-time">20:00</div>
+                <div class="timeline-node">
+                  <span class="diamond-dot"></span>
+                </div>
+                <div class="timeline-desc">
+                  <h3 class="event-title">Dinner &amp; Celebrations</h3>
+                  <p class="event-subtitle">Avsar Party Plot, Hansol</p>
+                </div>
+              </div>
+
+              <div class="timeline-flower-traveler" id="timelineFlowerTraveler" aria-hidden="true">
+                <img src="assets/camellia_flower.png" alt="Camellia Blossom" class="timeline-flower-img" draggable="false">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 5: LOCATION -->
+        <section class="section section-cream section-location" id="section-location">
+          <!-- Top Deckled Edge (Burgundy teeth hanging from Schedule into Location) -->
+          <div class="location-torn-top" aria-hidden="true">
+            <img src="assets/torn_edge.svg" alt="" class="torn-svg-img" draggable="false">
+          </div>
+
+          <div class="section-inner text-center">
+            <h2 class="script-title title-burgundy">Location</h2>
+
+            <div class="location-cards-container">
+              <!-- Solemnisation Venue Card -->
+              <div class="location-card">
+                <span class="location-ornament-tag">Church Ceremony</span>
+                <p class="location-solemn-note">Wedding will D.V. be SOLEMNISED at</p>
+                <h3 class="venue-name">Infant Jesus Church</h3>
+                <p class="venue-address">Hansol, Ahmedabad, Gujarat</p>
+                <div class="venue-datetime-pill">
+                  <span class="pill-calendar-icon">⛪</span>
+                  <span>January 16th, 2027 @ 5:00 PM</span>
+                </div>
+                <div class="venue-map-wrap">
+                  <a href="https://maps.google.com/?q=Infant+Jesus+Church+Hansol+Ahmedabad+Gujarat" target="_blank" rel="noopener noreferrer" class="btn-outline-burgundy" id="church-maps-btn">
+                    <span class="action-icon">📍</span> Church on Google Maps
+                  </a>
+                </div>
+              </div>
+
+              <!-- Refined Romantic Divider -->
+              <div class="location-card-sep" aria-hidden="true">
+                <span class="sep-line"></span>
+                <span class="sep-flourish">❦</span>
+                <span class="sep-line"></span>
+              </div>
+
+              <!-- Reception Venue Card -->
+              <div class="location-card">
+                <span class="location-ornament-tag">Reception &amp; Dinner</span>
+                <p class="location-solemn-note">Followed by reception and dinner at</p>
+                <h3 class="venue-name">Avsar Party Plot</h3>
+                <p class="venue-address">Hansol, Ahmedabad, Gujarat</p>
+                <div class="venue-datetime-pill">
+                  <span class="pill-calendar-icon">🥂</span>
+                  <span>Celebration, Toasts &amp; Dinner</span>
+                </div>
+                <div class="venue-map-wrap">
+                  <a href="https://maps.google.com/?q=Avsar+Party+Plot+Hansol+Ahmedabad" target="_blank" rel="noopener noreferrer" class="btn-outline-burgundy" id="reception-maps-btn">
+                    <span class="action-icon">📍</span> Reception on Google Maps
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Deckled Edge (Burgundy teeth pointing up into Location from Closing) -->
+          <div class="location-torn-bottom" aria-hidden="true">
+            <img src="assets/torn_edge.svg" alt="" class="torn-svg-img rotate-180" aria-hidden="true" draggable="false">
+          </div>
+        </section>
+
+        <!-- SECTION 9: HOPE TO SEE YOU & CLOSING PHOTO -->
+        <section class="section section-burgundy section-closing" id="section-closing">
+          <div class="section-inner text-center">
+            <h2 class="script-title title-light">Hope to see you there!</h2>
+            <p class="closing-names">Kevin and Blessy</p>
+
+            <!-- Couple Editorial Portrait -->
+            <div class="couple-portrait-wrapper">
+              <img src="assets/WhatsApp Image 2026-11-18 at 11.24.31 PM.jpeg" alt="Kevin and Blessy" class="couple-photo-img" draggable="false">
+              <div class="portrait-frame-accent"></div>
+            </div>
+
+            <!-- Footer Note & Credits -->
+            <footer class="invitation-footer">
+              <p class="footer-credit">Made with love for Kevin &amp; Blessy • January 2027</p>
+            </footer>
+
+          </div>
+        </section>
+
+      </article>
+
+    </main>
+
+
+  <script src="app.js"></script>
+</body>
+</html>

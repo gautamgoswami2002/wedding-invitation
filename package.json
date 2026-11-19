@@ -1,0 +1,16 @@
+{
+  "name": "wedding-invitation",
+  "version": "1.0.0",
+  "description": "Seamless Wedding Invitation Website for Kevin & Blessy",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "wedding",
+    "invitation"
+  ],
+  "author": "",
+  "license": "ISC"
+}

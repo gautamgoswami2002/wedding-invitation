@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Viktor and Paula — Wedding Invitation</title>
+  
+  <meta name="description" content="Wedding celebration of Viktor and Paula. Join us on our special day at Chateau de Paon, France.">
+  <meta property="og:title" content="Viktor and Paula — Wedding Invitation">
+  <meta property="og:description" content="We invite you to celebrate our wedding day on 05.07.2026 at Chateau de Paon, Arles, France.">
+  <meta property="og:image" content="assets/wedding_preview.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/wax_seal.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Google Fonts Preconnect & Fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Ovo&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="luxury-invitation-page">
+
+  <!-- Main Responsive Invitation Container -->
+  <main class="invitation-main" id="invitation-main">
+
+      <!-- ENVELOPE OPENING OVERLAY -->
+      <section class="envelope-overlay" id="envelope-overlay" aria-label="Wedding Envelope">
+        <div class="envelope-wrapper">
+          <!-- 4 Envelope Flaps -->
+          <div class="flap flap-top" id="flap-top">
+            <img src="assets/polygon_top.png" alt="Top flap" class="flap-img" draggable="false">
+          </div>
+          <div class="flap flap-bottom" id="flap-bottom">
+            <img src="assets/polygon_bottom.png" alt="Bottom flap" class="flap-img" draggable="false">
+          </div>
+          <div class="flap flap-left" id="flap-left">
+            <img src="assets/polygon_left.png" alt="Left flap" class="flap-img" draggable="false">
+          </div>
+          <div class="flap flap-right" id="flap-right">
+            <img src="assets/polygon_right.png" alt="Right flap" class="flap-img" draggable="false">
+          </div>
+
+          <!-- Wax Seal Center Button -->
+          <div class="wax-seal-wrapper popup-enter" id="wax-seal-btn" role="button" tabindex="0" aria-label="Open wedding invitation">
+            <div class="wax-seal-glow"></div>
+            <img src="assets/wax_seal.png" alt="Wax Seal Monogram" class="wax-seal-img" draggable="false">
+            <div class="wax-seal-ripple"></div>
+            <div class="open-instruction">
+              <span class="open-text">Click to open</span>
+              <span class="open-subtext">Tap the wax seal</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PETALS CANVAS FOR ROMANTIC DRIFTING EFFECT -->
+      <canvas id="petals-canvas" class="petals-canvas" aria-hidden="true"></canvas>
+
+      <!-- SCROLLABLE INVITATION CONTENT -->
+      <article class="invitation-content" id="invitation-content">
+
+        <!-- SECTION 1: HERO / BACKGROUND VIDEO -->
+        <section class="section section-hero" id="section-hero">
+          <div class="hero-container">
+            <div class="hero-fountain-card">
+              <div class="video-container">
+                <video id="bgVideo" class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/wedding_preview.png">
+                  <source src="assets/fountain_bg.mp4" type="video/mp4">
+                  <source src="https://assets.webgencyinvitations.com/IMG_6230%20(1)%20(1).mp4" type="video/mp4">
+                </video>
+                <div class="hero-vignette"></div>
+              </div>
+
+              <div class="hero-content">
+                <p class="hero-subtitle">Wedding Day</p>
+                <p class="hero-date">05.07.26</p>
+
+                <div class="hero-names-wrap">
+                  <h1 class="hero-title">
+                    <span class="name-part name-groom">Viktor</span>
+                    <span class="name-amp">&amp;</span>
+                    <span class="name-part name-bride">Paula</span>
+                  </h1>
+                </div>
+
+                <div class="hero-scroll-cue">
+                  <span class="scroll-arrow">↓</span>
+                  <span class="scroll-label">Scroll to Explore</span>
+                </div>
+              </div>
+
+              <!-- Bottom Peonies & Ruby Roses Arrangement (7 overlapping botanical blooms) -->
+              <div class="hero-floral-cluster" aria-hidden="true">
+                <img src="assets/ruby8.png" class="fl-piece fl-left-1" alt="" draggable="false">
+                <img src="assets/ruby6.png" class="fl-piece fl-left-2" alt="" draggable="false">
+                <img src="assets/ruby7.png" class="fl-piece fl-center-bud" alt="" draggable="false">
+                <img src="assets/ruby4.png" class="fl-piece fl-center-left" alt="" draggable="false">
+                <img src="assets/ruby_rose_cluster.png" class="fl-piece fl-white-rose" alt="" draggable="false">
+                <img src="assets/ruby2.png" class="fl-piece fl-center-right" alt="" draggable="false">
+                <img src="assets/ruby1.png" class="fl-piece fl-right-giant" alt="" draggable="false">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 2: DEAR FRIENDS AND FAMILY -->
+        <section class="section section-burgundy section-message" id="section-message">
+          <div class="message-inner text-center">
+            <h2 class="script-title title-light">Dear Friends and Family,</h2>
+            <div class="message-body-wrap">
+              <p class="message-body">
+                As we get ready to say “I do,” we feel grateful for the wonderful people in our lives.
+              </p>
+              <p class="message-body">
+                Your support means the world to us, and we would be honored to have you with us as we begin our life together.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 3: COUNTDOWN TIMER -->
+        <section class="section section-cream section-countdown" id="section-countdown">
+          <!-- Top Deckled Edge (Burgundy teeth hanging into cream) -->
+          <div class="countdown-torn-top" aria-hidden="true">
+            <img src="assets/torn_edge.svg" alt="" class="torn-svg-img" draggable="false">
+          </div>
+
+          <div class="section-inner text-center">
+            <h2 class="script-title title-burgundy">The Celebration Begins In</h2>
+            <div class="countdown-grid" id="countdownContainer">
+              <div class="countdown-item">
+                <span class="countdown-num" id="days">00</span>
+                <span class="countdown-lbl">Days</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-item">
+                <span class="countdown-num" id="hours">00</span>
+                <span class="countdown-lbl">Hours</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-item">
+                <span class="countdown-num" id="minutes">00</span>
+                <span class="countdown-lbl">Minutes</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-item">
+                <span class="countdown-num" id="seconds">00</span>
+                <span class="countdown-lbl">Seconds</span>
+              </div>
+            </div>
+            <p class="countdown-note">Sunday, July 5, 2026 • Arles, France</p>
+          </div>
+
+          <!-- Bottom Deckled Edge (Burgundy teeth pointing up into cream) -->
+          <div class="countdown-torn-bottom" aria-hidden="true">
+            <img src="assets/torn_edge.svg" alt="" class="torn-svg-img rotate-180" draggable="false">
+          </div>
+        </section>
+
+        <!-- SECTION 4: SCHEDULE OF EVENTS -->
+        <section class="section section-burgundy section-schedule" id="section-schedule">
+          <div class="section-inner">
+            <h2 class="script-title title-light text-center">Schedule of Events</h2>
+
+            <div class="timeline-container" id="timelineContainer">
+              <div class="timeline-spine"></div>
+
+              <!-- Event 1 -->
+              <div class="timeline-row" data-timeline-idx="0">
+                <div class="timeline-time">16:00</div>
+                <div class="timeline-node">
+                  <span class="diamond-dot"></span>
+                </div>
+                <div class="timeline-desc">
+                  <h3 class="event-title">Wedding Ceremony</h3>
+                  <p class="event-subtitle">Garden Fountain Courtyard</p>
+                </div>
+              </div>
+
+              <!-- Event 2 -->
+              <div class="timeline-row" data-timeline-idx="1">
+                <div class="timeline-time">17:00</div>
+                <div class="timeline-node">
+                  <span class="diamond-dot"></span>
+                </div>
+                <div class="timeline-desc">
+                  <h3 class="event-title">Cocktail Hour</h3>
+                  <p class="event-subtitle">Champagne &amp; Hors d’œuvres</p>
+                </div>
+              </div>
+
+              <!-- Event 3 -->
+              <div class="timeline-row" data-timeline-idx="2">
+                <div class="timeline-time">19:00</div>
+                <div class="timeline-node">
+                  <span class="diamond-dot"></span>
+                </div>
+                <div class="timeline-desc">
+                  <h3 class="event-title">Dinner</h3>
+                  <p class="event-subtitle">Grand Ballroom Terrace</p>
+                </div>
+              </div>
+
+              <!-- Event 4 -->
+              <div class="timeline-row" data-timeline-idx="3">
+                <div class="timeline-time">20:00</div>
+                <div class="timeline-node">
+                  <span class="diamond-dot"></span>
+                </div>
+                <div class="timeline-desc">
+                  <h3 class="event-title">Party</h3>
+                  <p class="event-subtitle">Music, Toasts &amp; Celebration</p>
+                </div>
+              </div>
+
+              <div class="timeline-flower-traveler" id="timelineFlowerTraveler" aria-hidden="true">
+                <img src="assets/camellia_flower.png" alt="Camellia Blossom" class="timeline-flower-img" draggable="false">
+              </div>
+            </div>
+          </div>
+
+          <!-- Torn Deckled Paper Edge (Burgundy over Cream) -->
+          <div class="torn-edge-divider divider-to-cream">
+            <img src="assets/torn_edge.svg" alt="" class="torn-svg-img" aria-hidden="true" draggable="false">
+          </div>
+        </section>
+
+        <!-- SECTION 5: LOCATION -->
+        <section class="section section-cream section-location" id="section-location">
+          <div class="section-inner text-center">
+            <h2 class="script-title title-burgundy">Location</h2>
+
+            <div class="venue-sketch-wrapper">
+              <img src="assets/chateau_sketch.png" alt="Chateau de Paon Architectural Sketch" class="chateau-sketch-img" draggable="false">
+            </div>
+
+            <h3 class="venue-name">Chateau de Paon</h3>
+            <p class="venue-address">Address: Petit Chemin de Saint-Gilles 13200 Arles, France</p>
+
+            <div class="location-actions">
+              <a href="https://maps.google.com/?q=Petit+Chemin+de+Saint-Gilles+13200+Arles+France" target="_blank" rel="noopener noreferrer" class="btn-outline-burgundy" id="maps-btn">
+                <span class="action-icon">📍</span> Open in Google Maps
+              </a>
+              <button class="btn-subtle-burgundy" id="add-to-calendar-btn">
+                <span class="action-icon">📅</span> Add to Calendar
+              </button>
+            </div>
+          </div>
+
+          <!-- Torn Deckled Paper Edge (Cream into Burgundy) -->
+          <div class="torn-edge-divider divider-to-burgundy">
+            <img src="assets/torn_edge.svg" alt="" class="torn-svg-img rotate-180" aria-hidden="true" draggable="false">
+          </div>
+        </section>
+
+        <!-- SECTION 6: DRESS CODE -->
+        <section class="section section-burgundy section-dresscode" id="section-dresscode">
+          <div class="section-inner text-center">
+            <h2 class="script-title title-light">Dress Code</h2>
+            <p class="dresscode-lead">
+              We kindly invite you to dress in elegant attire that reflects the style and spirit of our special day.
+            </p>
+
+            <!-- Color Palette Swatches -->
+            <div class="palette-swatches-wrap" aria-label="Color Palette">
+              <div class="palette-swatch" style="--swatch-color: #525c38;" title="Sage Green">
+                <span class="swatch-circle"></span>
+                <span class="swatch-label">Sage</span>
+              </div>
+              <div class="palette-swatch" style="--swatch-color: #36121e;" title="Deep Wine">
+                <span class="swatch-circle"></span>
+                <span class="swatch-label">Wine</span>
+              </div>
+              <div class="palette-swatch" style="--swatch-color: #3a3835;" title="Dark Slate">
+                <span class="swatch-circle"></span>
+                <span class="swatch-label">Slate</span>
+              </div>
+              <div class="palette-swatch" style="--swatch-color: #e3d1be;" title="Champagne Cream">
+                <span class="swatch-circle"></span>
+                <span class="swatch-label">Champagne</span>
+              </div>
+            </div>
+
+            <!-- Golden Rococo Antique Framed Cards -->
+            <div class="framed-attire-grid">
+              <!-- Gentlemen Card -->
+              <div class="attire-card">
+                <div class="gilded-frame-wrapper">
+                  <img src="assets/frame_men.png" alt="Gentlemen Attire Inspiration" class="gilded-frame-img" draggable="false">
+                </div>
+                <div class="attire-text">
+                  <h4 class="attire-target">Gentlemen</h4>
+                  <p class="attire-desc">Well-tailored suits with classic dress shoes are preferred.</p>
+                </div>
+              </div>
+
+              <!-- Ladies Card -->
+              <div class="attire-card">
+                <div class="gilded-frame-wrapper">
+                  <img src="assets/frame_women.png" alt="Ladies Attire Inspiration" class="gilded-frame-img" draggable="false">
+                </div>
+                <div class="attire-text">
+                  <h4 class="attire-target">Ladies</h4>
+                  <p class="attire-desc">Formal dresses in elegant, polished styles are encouraged.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 7: DETAILS -->
+        <section class="section section-burgundy section-details" id="section-details">
+          <div class="section-inner text-center">
+            <div class="details-stationery-card">
+              <div class="stationery-card-border"></div>
+              <h2 class="title-burgundy">Details</h2>
+              <div class="details-flourish" aria-hidden="true">✦ ❦ ✦</div>
+              <p class="details-text">
+                For additional information or questions, please contact the wedding organizers.
+              </p>
+              <div class="organizer-info-box">
+                <span class="organizer-tag">Wedding Organizer</span>
+                <h3 class="contact-name">Ameila</h3>
+                <a href="tel:+316845965887" class="details-phone-pill" id="organizer-phone">
+                  <span class="phone-icon">📞</span>
+                  <span class="phone-number">+31 6845965887</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 9: HOPE TO SEE YOU & CLOSING PHOTO -->
+        <section class="section section-burgundy section-closing" id="section-closing">
+          <div class="section-inner text-center">
+            <h2 class="script-title title-light">Hope to see you there!</h2>
+            <p class="closing-names">Viktor and Paula</p>
+
+            <!-- Couple Editorial Portrait -->
+            <div class="couple-portrait-wrapper">
+              <img src="assets/wedding_preview.png" alt="Viktor and Paula" class="couple-photo-img" draggable="false">
+              <div class="portrait-frame-accent"></div>
+            </div>
+
+            <!-- Footer Note & Credits -->
+            <footer class="invitation-footer">
+              <p class="footer-credit">Made with love for Viktor &amp; Paula • July 2026</p>
+            </footer>
+
+          </div>
+        </section>
+
+      </article>
+
+    </main>
+
+
+  <script src="app.js"></script>
+
+<script>
+  (function() {
+    // Hide envelope overlay immediately for section capture
+    const env = document.getElementById('envelope-overlay');
+    if (env) env.style.display = 'none';
+
+    const params = new URLSearchParams(window.location.search);
+    const secId = params.get('scroll');
+    if (secId) {
+      window.addEventListener('DOMContentLoaded', () => {
+        const sec = document.getElementById(secId);
+        if (sec) {
+          window.scrollTo(0, sec.offsetTop);
+          document.documentElement.scrollTop = sec.offsetTop;
+          document.body.scrollTop = sec.offsetTop;
+          window.dispatchEvent(new Event('scroll'));
+        }
+      });
+    }
+  })();
+</script>
+</body>
+</html>
