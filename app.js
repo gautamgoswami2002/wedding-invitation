@@ -89,7 +89,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (waxSealBtn) {
-    waxSealBtn.addEventListener('click', openEnvelope);
+    waxSealBtn.addEventListener('click', () => {
+      waxSealBtn.blur();
+      openEnvelope();
+    });
+    waxSealBtn.addEventListener('mousedown', (e) => {
+      // Prevents default focus ring and outline indicator on mouse click
+      e.preventDefault();
+    });
+    waxSealBtn.addEventListener('touchstart', () => {
+      waxSealBtn.blur();
+    }, { passive: true });
     waxSealBtn.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
