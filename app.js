@@ -220,16 +220,15 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================================================
-  // 4. TIMELINE CAMELLIA FLOWER SCROLL TRAVELER (16:00 -> 17:00 -> 19:00 -> 20:00)
+  // 4. TIMELINE CAMELLIA FLOWER SCROLL TRAVELER (17:00 -> 19:00 -> 20:00)
   // ==========================================================================
   const scheduleSection = document.getElementById('section-schedule');
   const timelineContainer = document.getElementById('timelineContainer');
   const flowerTraveler = document.getElementById('timelineFlowerTraveler');
   const timelineRows = Array.from(document.querySelectorAll('.timeline-row'));
 
-  if (timelineContainer && flowerTraveler && timelineRows.length === 4) {
+  if (timelineContainer && flowerTraveler && timelineRows.length > 0) {
     let currentActiveIdx = -1;
-    let ticking = false;
 
     // Calculate exact pixel position of the diamond node in each row relative to timelineContainer
     function getMilestoneTops() {
@@ -262,9 +261,9 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // Map scroll progress through the viewport smoothly into the 4 timings
+    // Map scroll progress through the viewport smoothly into the timings
     updateTimelineFlower = function() {
-      if (!scheduleSection || timelineRows.length !== 4) return;
+      if (!scheduleSection || timelineRows.length === 0) return;
 
       const vh = window.innerHeight || 800;
       const focalY = vh * 0.48;
@@ -311,8 +310,19 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Initialize at 16:00 (index 0)
+    // Initialize at first milestone (17:00, index 0)
     setActivePoint(0);
     setTimeout(updateTimelineFlower, 100);
+  }
+
+  // ==========================================================================
+  // 5. COUPLE PORTRAIT PROTECTION (PREVENT DOWNLOAD / SAVE)
+  // ==========================================================================
+  const coupleWrapper = document.querySelector('.couple-portrait-wrapper');
+  if (coupleWrapper) {
+    coupleWrapper.addEventListener('contextmenu', (e) => {
+      e.preventDefault();
+      return false;
+    });
   }
 });
